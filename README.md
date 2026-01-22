@@ -17,7 +17,7 @@ This repo shows the expected layout for Lab submissions. Files are placeholders 
 
 ## How graders will use your repositories to test your code
 - Clone your repo into `grading_ws/src`, then from `grading_ws` run `rosdep install --from-paths src --ignore-src -r -y` followed by `colcon build --packages-select your_pkg`.
-- Source the workspace (`source install/setup.bash`) and run either `ros2 launch your_pkg your_launch.py` or the individual nodes (`ros2 run your_pkg your_node`) once implemented.
+- Source the workspace (`source install/setup.bash`) and run either `ros2 launch your_pkg your_launch.py` or the individual nodes (`ros2 run your_pkg your_node`) depending on the lab. For lab1, we expect to run `ros2 launch your_pkg lab1_launch.py`.
 - Graders will **NOT** attempt to fix any broken builds or missing dependencies, so ensure your package builds and runs correctly before submission and has all needed files (i.e includes your racelines) and dependencies declared.
 
 ## If you created the package elsewhere
