@@ -9,11 +9,13 @@ This repo shows the expected layout for Lab submissions. Files are placeholders 
 - **Always** avoid committing `build/`, `install/`, or `log/` directories.
 
 ## Package contents (placeholders)
+The following is a reference layout of what a typical submission would look like. 
 - `your_pkg/package.xml`, `CMakeLists.txt`, `setup.py`, `setup.cfg`: standard ROS2 package files.
 - `your_pkg/src/` and `your_pkg/include/your_pkg/`: C++ node and header placeholders.
 - `your_pkg/your_pkg/`: Python node placeholders.
 - `your_pkg/launch/lab1_launch.py`: launch file placeholder.
 - `your_pkg/params/params.yaml`: parameter placeholder.
+If your submission is only in C++, you may omit the Python node folders and files, and vice-versa.
 
 ## How graders will use your repositories to test your code
 - Clone your repo into `grading_ws/src`, then from `grading_ws` run `rosdep install --from-paths src --ignore-src -r -y` followed by `colcon build --packages-select your_pkg`.
